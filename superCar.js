@@ -24,19 +24,18 @@ function howFast(MPH){
 
 // const speed = process.argv[4]
 
+let message = prompt('Please enter your car horse power and weight and speed');
 
-let what = prompt('Please enter your car horse power and weight');
+const arr = message.split(' ')
 
-const arr = what.split(' ')
-console.log
 
 const horsePower = arr[0]
 const weight = arr[1]
+const MPH = arr[2]
+const result = horsePowerToWeight(horsePower,weight)
+const result1 = howFast(MPH) 
 
- const result = horsePowerToWeight(horsePower,weight)
-  
-
- document.querySelector('#result').innerText= result
-
+document.querySelector('#result').innerText= result 
+document.querySelector('#para').innerText = result1
 
 
