@@ -11,9 +11,9 @@ function horsePowerToWeight(horsePower,weight){
 }
 
 
-const hp = process.argv[2]
-const weight = process.argv[3] 
-const answer = horsePowerToWeight(hp, weight)
+// const hp = process.argv[2]
+// const weight = process.argv[3] 
+// const answer = horsePowerToWeight(hp, weight)
 
 // "But is it fast" if mph is equal or greater than 190, return "oh you're fast fast"
 // Otherwise, return "join the club bucko"
@@ -22,11 +22,21 @@ function howFast(MPH){
     return MPH >= 190 ? "Oh you're FAST FAST": "Join the club Bucko"
 }
 
-const speed = process.argv[4]
+// const speed = process.argv[4]
 
 
-console.log(horsePowerToWeight(hp,weight))
-console.log(howFast(speed))
+let what = prompt('Please enter your car horse power and weight');
+
+const arr = what.split(' ')
+console.log
+
+const horsePower = arr[0]
+const weight = arr[1]
+
+ const result = horsePowerToWeight(horsePower,weight)
+  
+
+ document.querySelector('#result').innerText= result
 
 
 
