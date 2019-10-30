@@ -25,9 +25,9 @@ const horsePower = arr[0]
 const weight = arr[1]
 const MPH = arr[2]
 const result = horsePowerToWeight(horsePower,weight)
-const result1 = howFast(MPH) 
+// const result1 = howFast(MPH) 
 
 document.querySelector('#result').innerText= result 
-document.querySelector('#para').innerText = result1
+// document.querySelector('#para').innerText = result1
 
 
